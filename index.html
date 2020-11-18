@@ -15,17 +15,61 @@
 </head>
 
 <style>
-ul.dash {
+.dash {
     list-style: none;
     margin-left: 0;
     padding-left: 1em;
 }
-ul.dash > li:before {
+.dash > li:before {
     display: inline-block;
     content: "-";
     width: 0.5em;
     margin-left: -1em;
 }
+<!-- End Dash list -->
+
+* {
+  box-sizing: border-box;
+}
+.columnb {
+  float: left;
+  padding: 30px;
+  height: 150px; 
+}
+.leftb {
+  width: 50%;
+}
+.rightb {
+  width: 50%;
+}
+.rowb:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+<!-- End box -->
+
+* {
+  box-sizing: border-box;
+}
+.columns {
+  float: left;
+  padding: 30px;
+  height: 500px; 
+}
+.lefts {
+  width: 40%;
+}
+.rights {
+  width: 60%;
+}
+.rowskill:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+<!-- End column for skills -->
+
 </style>
 
 <body>
@@ -62,7 +106,8 @@ ul.dash > li:before {
         </ul>
     </header>
     <!-- End header -->
-
+	
+	
     <div id="lead">
         <div id="lead-content">
             <h1>Mariaclaudia Nicolai</h1>
@@ -72,7 +117,6 @@ ul.dash > li:before {
         <!-- End #lead-content -->
 
         <div id="lead-overlay"></div>
-
         <div id="lead-down">
             <span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
@@ -100,6 +144,7 @@ ul.dash > li:before {
         </div>
     </div>
     <!-- End #about -->
+		
 <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
@@ -113,7 +158,6 @@ ul.dash > li:before {
 					Delft, The Netherlands
 					</p>
             </div>
-
 		<div data-date="April 2020">
                 <h3>Assistant</h3>
                 <h4>Assistant in promoting content at Foodie Lab</h4>
@@ -135,13 +179,6 @@ ul.dash > li:before {
 					  <li>Study of the role of user comments on healthcare Android applications</li>
 					  <li>Result of the research presented at the international conference in Tallinn, Estonia</li>
 					</ul>
-					<!--p>
-					Research subject: Role of users’ feedback on healthcare mobile Android apps
-					<p>
-					<p>
-                   Authors: M. Nicolai, L. Pascarella, F. Palomba, A. Bacchelli
-					</p>
-					<p-->
 					<p>
 					Delft, The Netherlands
 					<p>
@@ -155,27 +192,7 @@ ul.dash > li:before {
 					</ul>
 					<p>
 					Benevento, Italy
-					<p>
-					<!--p>
-                   Internship subject: Ethical and deontological aspects of the profession of pharmacist and applications of the notions acquired during study
-					<p>
-                   Farmacia Dr. Ugo Italiano s.a.s.
-					</p>
-					<p>
-					Tutor: Dr. Stefano Italiano
-					<p>
-                   Benevento, Italy
-					</p-->    
-            </div>
-            <div data-date="2015 – 2016">
-                <h3>Scholarships and Awards</h3>
-                <h4>Scholarship</h4>
-					<p>
-					Scholarships and housing services at University Residences
-					</p>
-					<p>
-                   Awarded by University of Salerno
-					</p>    
+					<p> 
             </div>
 	    <div data-date="2015 – 2016">
                 <h3>Quality inspector </h3>
@@ -186,23 +203,79 @@ ul.dash > li:before {
 					</ul>
 					<p>
 					Paris, France
-					<p>
-					<!--p>
-                   Contribution: Testing of electronic devices, handling precision electronic tools
-					</p>
-					<p>
-                   Company details: Bruitparif is a non-profit environmental organization responsible for monitoring the environmental noise in the Paris agglomeration
-					</p>
-					<p>
-                   Paris, France
-					</p-->    
+					<p>   
             </div>
         </div>
     </div>
     <!-- End #experience -->
+	
+<div id="about">
+        <div class="container">
+            <div class="rowb">  
+		  <div class="columnb leftb">
+			<h2 class="heading">Scholarships and Awards</h2>
+		  </div>
+		  <div  class="columnb rightb">
+			<p>
+			Scholarships and housing services at University Residences
+			</p>
+			<p>&nbsp;</p>
+			<p>
+		   Awarded by University of Salerno (2015 - 2016)
+			</p> 
+		  </div>
+		</div>
+	</div>
+</div>
+<!-- End #awards -->
 
+<div id="experience" class="background-alt">
+    <h2 class="heading">Skills</h2>
+        
+        <div class="rowskills">  
+		 <div class="column left" style="background-color:#ffffff;">
+			<h3 style="color: #3498db;">Computer skills</h3>
+		 </div>
+		 <div  class="column right" style="background-color:#ffffff;">
+			<h4>Software</h4>
+				<p><big>MS Office</big> <small>Write documents, create presentation, create spreadsheet</small></p>
+				<p><big>GMDH Shell</big> <small>Tool for data mining and forecasting of multi-parametric datasets</small></p>
+				<p><big>YASARA</big> <small>Program for molecular visualising, modelling, and dynamics</small></p>
+				<p><big>Weka</big> <small>Collection of machine learning algorithms for data mining tasks</small></p>
+				<p><big>Gromacs</big> <small>Software used in chemistry for dynamic simulations of biomolecules</small></p>
+				<p><big>Unix shell</big> <small>Command-line interpreter of Unix-like operating systems</small></p>
+		 </div>
+		 <div  class="column right" style="background-color:#ffffff;">
+			<h4>Languages</h4>
+				<p><big>Python</big> <small>PyCharm is the IDE for software development and debugging</small></p>
+				<p><big>HTML, JavaScript, CSS</big> <small>WebStorm is the IDE for software development and debugging</small></p>
+				<p><big>LaTeX</big> <small>TeXstudio and Overleaf are alternative writing editors</small></p>
+		 </div>
+		</div>
 		
-   
+<div class="rowskills">  
+		 <div class="column left" style="background-color:#ffffff;">
+			<h3 style="color: #3498db;">Other skills</h3>
+		 </div>
+		 <div  class="column right" style="background-color:#ffffff;">
+			<h4>Professional</h4>
+				<p>Quantitative and qualitative analysis, laboratory tests, measurements</p>
+				<p>Knowledge of GMP standards and stages of the production process</p>
+				<p>Communication with customers</p>
+				<p>Warehouse management</p>
+		 </div>
+		 <div  class="column right" style="background-color:#ffffff;">
+			<h4>Technical</h4>
+				<p>Use of laboratory instruments: microscopes, spectrometers, chromatography, centrifuges, glassware</p>
+				<p>Processing of analytical results, compilation of documents and drafting of reports</p>
+				<p>Ability to write executable programs</p>
+				<p>Electronic assembly and welding operations and verification test activities</p>
+		 </div>
+		</div>
+</div>
+
+
+<!--			
  <div id="skills">
         <h2 class="heading">Skills</h2>
 		<h3 style="color: #3498db;">Software skills</h3>
@@ -210,11 +283,7 @@ ul.dash > li:before {
 			<p>Python - HTML<p>
 		<h4>Tools</h4>
      		<p>GMDH - YASARA - KNIME - LaTeX - Git<p>
-			<!--<p>YASARA<p>
-			<p>KNIME<p>
-	    	<p>LaTeX<p>
-	     	<p>Git<p>-->
-	<h3 style="color: #3498db;">Lab skills</h3>
+	<<h3 style="color: #3498db;">Lab skills</h3>
 	 <h4>Lab techniques</h4>
             	<p>Conducting and supporting scientific investigations and experiments<p>
             	<p>Planning, setting up and undertaking controlled experiments and trials<p>
@@ -233,11 +302,12 @@ ul.dash > li:before {
             </div>
         </div>
     </div>
+	-->
 	
 	
 
 
-    <!-- End #about -->
+    
    <!--<div id="skills">
         <h2 class="heading">Skills</h2>
 	<h3>Software skills</h3>
@@ -281,7 +351,7 @@ ul.dash > li:before {
                 <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send</button>
             </form>-->
-		<p> m.nicolai[at]studenti.unisa.it </p>
+		<p> mariaclaudia.nicolai[at]gmail.com </p>
         </div>
         <!-- End #contact-form -->
     </div>
